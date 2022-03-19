@@ -11,8 +11,8 @@ FPS = 60
 W, H = 480, 640
 SCREEN = pygame.display.set_mode((W, H)) # make pygame window
 TITLE = pygame.display.set_caption("Dice Rolling Simulator")
-#ICON = pygame.image.load("assets\images\icon.png")
-#pygame.display.set_icon(ICON)
+ICON = pygame.image.load("assets\images\icon.png")
+pygame.display.set_icon(ICON)
 
 backgrounds = [(110, 68, 255),
     (241, 80, 37),
@@ -40,14 +40,15 @@ questionmark_rect = questionmark_surf.get_rect(center = (W/2, H/2))
 
 
 class Dice():
-    def __init__(self, size, center, width):
+    def __init__(self, size, center, width, dotsize):
         self.size = size
         self.center = center
         self.centerx = self.center[0]
         self.centery = self.center[1]
         self.width = width
+        self.dotsize = dotsize
         self.value = None
-        self.dotsize = 16
+        
 
 
     def outline(self):
@@ -104,7 +105,7 @@ class Dice():
 
     def main(self):
         self.draw()
-dice = Dice(W/3*2, (W/2, H/2), 16)
+dice = Dice(W/3*2, (W/2, H/2), 16, 20)
 
 
 def main():
