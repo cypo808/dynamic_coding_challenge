@@ -3,6 +3,8 @@ import random, os, time
 '''
 TODO
 one lil problem - when there are same letters more times in a word, it recognises just the first letter... need to fix it somehow
+read words from files
+make pics into a file
 '''
 
 pics = ["""
