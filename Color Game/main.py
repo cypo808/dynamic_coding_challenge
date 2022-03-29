@@ -149,7 +149,6 @@ def main():
                     else:
                         score.value += 1
                         time = round(time - 0.4 , 1)
-                        print(time)
 
                     user_text = ""
                     timebar.rect.left = 0
