@@ -7,7 +7,7 @@ Wish me luck :)
 ### List of projects: 
 - [x] Color Game
 - [x] Number Guessing
-- [x] Text-based Adventure Game
+- [ ] Text-based Adventure Game
 - [x] Dice Rolling Simulator
 - [x] Hangman
 - [x] Contact Book
