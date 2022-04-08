@@ -10,10 +10,14 @@ with open("data.csv", "r", newline="") as file:
 
 def main():
     os.system("cls")
-    print("Contact Book\nType \"h\" for help")
+    print("Contact Book\n")
+    if bool(dictionary): 
+        show()
+
+    print("\nType \"h\" for help")
     while True:
         # u = user - input from user
-        u = str(input(">>> ")).lower()   
+        u = str(input(">>> ")).lower()
         if u == "h" or u == "help" or u == "?":
             help()
         if u == "s" or u == "show":
@@ -47,6 +51,7 @@ def add():
     name = str(input("Enter name of new contact: "))
     phone = str(input("Enter phone for " + name + ": "))
     dictionary[name] = phone
+    print("Contact added!\n")
 
 def delete():
     try:
@@ -54,24 +59,34 @@ def delete():
         del dictionary[userinput]
     except KeyError:
         print("This contact doesn't exits")
+    else:
+        print("Contact deleted!")
 
 def exit_program():
+    global x
+    x = None
     while True:
-        u = str(input("Do you want to save changes? (y/n): ")).lower()
+        u = str(input("Do you want to save changes? (y/n/cancel): ")).lower()
         if u == "y" or u == "yes":
             with open("data.csv", "w", newline="") as file:
                 writer = csv.writer(file)
                 for i in dictionary:
                     writer.writerow([i, dictionary[i]])
+            x = True
             break
-        if u == "n" or u == "n":
+        if u == "n" or u == "no":
+            x = True
+            break
+        if u == "c" or u == "cancel":
+            x = False
             break
         else:
             print("You probably entered a wrong value...")
-            
-    print("Okay, see you later :)")
-    time.sleep(2)
-    exit()
+
+    if x:
+        print("Okay, see you later :)")
+        time.sleep(2)
+        exit()
 
 
 main()
