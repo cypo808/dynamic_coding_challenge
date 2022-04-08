@@ -56,6 +56,6 @@ Wish me luck :)
 ##  
 ### Feel free to contact me - cypooriginal@gmail.com  
 Date started - 19th may 2022  
-Projects done 8/42
+Projects done - 8/42
 
 
