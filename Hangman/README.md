@@ -1,1 +1,4 @@
-really need help with this, i have no idea how should i do it :((
+# Hangman
+
+Simple hangman made in console (for now)  
+I don't think that I need to explain how to play it :)
