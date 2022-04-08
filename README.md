@@ -11,7 +11,7 @@ Wish me luck :)
 - [x] Dice Rolling Simulator
 - [x] Hangman
 - [x] Contact Book
-- [ ] Email Slicer
+- [x] Email Slicer
 - [ ] Age Calculator
 - [ ] Desktop Notifier App
 - [ ] Python Story Generator
