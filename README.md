@@ -53,9 +53,10 @@ Wish me luck :)
   - [ ] Instagram Photo Downloader
   - [ ] Quiz Application
 
-##  
-### Feel free to contact me - cypooriginal@gmail.com  
+
+##
+## Feel free to contact me - cypooriginal@gmail.com  
 Date started - 19th may 2022  
 Projects done - 8/42
 
-
+> You can check you my [other projects](https://github.com/yungcypo?tab=repositories) if you are interested
